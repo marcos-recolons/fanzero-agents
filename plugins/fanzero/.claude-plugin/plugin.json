@@ -1,0 +1,23 @@
+{
+  "name": "fanzero",
+  "version": "1.0.0",
+  "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
+  "author": {
+    "name": "Marcos Recolons",
+    "url": "https://fanzero.app"
+  },
+  "homepage": "https://fanzero.app/agents",
+  "repository": "https://github.com/marcos-recolons/fanzero-agents",
+  "license": "MIT",
+  "keywords": [
+    "indie-games",
+    "game-distribution",
+    "game-publishing",
+    "launch",
+    "content-creators",
+    "revenue-share",
+    "codex",
+    "claude-code"
+  ],
+  "displayName": "FanZero Publish"
+}

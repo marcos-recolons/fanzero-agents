@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "fanzero": {
+      "type": "http",
+      "url": "https://fanzero.app/mcp"
+    }
+  }
+}

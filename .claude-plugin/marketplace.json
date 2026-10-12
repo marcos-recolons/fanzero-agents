@@ -1,0 +1,15 @@
+{
+  "name": "fanzero-agents",
+  "owner": {
+    "name": "Marcos Recolons"
+  },
+  "description": "Publish games and connect game launches with content creators through FanZero.",
+  "plugins": [
+    {
+      "name": "fanzero",
+      "source": "./plugins/fanzero",
+      "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
+      "version": "1.0.0"
+    }
+  ]
+}

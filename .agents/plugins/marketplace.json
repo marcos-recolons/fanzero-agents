@@ -1,0 +1,20 @@
+{
+  "name": "fanzero-agents",
+  "interface": {
+    "displayName": "FanZero Agents"
+  },
+  "plugins": [
+    {
+      "name": "fanzero",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fanzero"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

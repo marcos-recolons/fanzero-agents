@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fanzero",
+  "version": "1.0.0",
+  "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
+  "author": {
+    "name": "Marcos Recolons",
+    "url": "https://fanzero.app"
+  },
+  "homepage": "https://fanzero.app/agents",
+  "repository": "https://github.com/marcos-recolons/fanzero-agents",
+  "license": "MIT",
+  "keywords": [
+    "indie-games",
+    "game-distribution",
+    "game-publishing",
+    "launch",
+    "content-creators",
+    "revenue-share",
+    "codex",
+    "claude-code"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "FanZero Publish",
+        "shortDescription": "Distribute games with creators",
+        "longDescription": "Prepare a compatible game build, publish a reviewed listing on FanZero, and work with content creators through dated actions and revenue-share pacts. Publishing and revenue commitments stay under your approval. Includes a publishing skill; optional MCP connections are configured separately. Current uploads accept offline HTML builds or playable slices, up to 8 MB.",
+        "developerName": "Marcos Recolons",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Assess a game build",
+          "Prepare a launch listing",
+          "Guide game publishing",
+          "Review creator action plans"
+        ],
+        "websiteURL": "https://fanzero.app",
+        "supportURL": "https://github.com/marcos-recolons/fanzero-agents/issues",
+        "defaultPrompt": [
+          "Check whether my game can be published on FanZero.",
+          "Prepare a FanZero listing and revenue-share offer for my approval.",
+          "Review my FanZero creator proposals and their revenue-share dates."
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "publication": {
+        "release_notes": "Initial publishing skill for Codex and Claude Code. Manual MCP recipes are distributed separately."
+      }
+    }
+  }
+}
