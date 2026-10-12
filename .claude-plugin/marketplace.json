@@ -9,7 +9,7 @@
       "name": "fanzero",
       "source": "./plugins/fanzero",
       "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ]
 }

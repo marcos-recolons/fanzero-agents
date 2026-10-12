@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fanzero",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
   "author": {
     "name": "Marcos Recolons",
@@ -45,7 +45,7 @@
         "logo": "./assets/icon.png"
       },
       "publication": {
-        "release_notes": "Initial publishing skill for Codex and Claude Code. Manual MCP recipes are distributed separately."
+        "release_notes": "Clarify optional data transmission and storage in the hosted FanZero service."
       }
     }
   }
