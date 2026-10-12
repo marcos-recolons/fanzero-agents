@@ -1,0 +1,11 @@
+# FanZero Discover & Plan
+
+Find a place to distribute an indie game made with Codex, Claude Code or another coding agent. This native skill helps you assess FanZero's documented fit and draft a game listing, creator offer and launch plan from the context you supply. It focuses on your game, its audience and launch visibility.
+
+Ask the skill to assess the game description already in your conversation. It returns drafts for the owner to review, without reading project files, browsing, running code, using tools or connecting to HTTP or MCP. All workflow instructions are bundled. This package has no hooks, executable dependencies, accounts, keys, uploads, backend or telemetry.
+
+The bundled guidance covers offline HTML builds or playable slices with bundled assets and an `index.html` entry, up to 8 MB; human curator review; and creator revenue shares above 0% and at most 50%. A creator's earliest proposed action anchors a 28-day window, with one studio approval and no proof stage. Build compliance and live platform conditions remain unverified during this planning workflow.
+
+The plugin is intended for adult developers and content creators planning commercial game launches. It does not offer a service for minors. It does not publish a game or commit the owner to revenue terms. If the owner chooses to proceed, [FanZero Publish](https://github.com/marcos-recolons/fanzero-agents/tree/main/plugins/fanzero) is a separate workflow, or they can visit [FanZero](https://fanzero.app) themselves. These links are manual handoffs, not requests performed by this plugin.
+
+[Privacy notice for this plugin](./PRIVACY.md) explains its scope and the host client's role. Publisher: Marcos Recolons. [Integration support](https://github.com/marcos-recolons/fanzero-agents/issues). MIT applies to this package; it does not license submitted games or the hosted FanZero application.

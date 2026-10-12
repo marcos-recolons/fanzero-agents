@@ -15,6 +15,18 @@
         "authentication": "ON_USE"
       },
       "category": "Developer Tools"
+    },
+    {
+      "name": "fanzero-discover",
+      "source": {
+        "source": "local",
+        "path": "./plugins/fanzero-discover"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_USE"
+      },
+      "category": "Developer Tools"
     }
   ]
 }

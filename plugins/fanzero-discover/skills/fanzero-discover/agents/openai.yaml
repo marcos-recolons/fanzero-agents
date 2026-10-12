@@ -1,0 +1,4 @@
+interface:
+  display_name: "FanZero Discover & Plan"
+  short_description: "Find a distribution fit and draft your game launch"
+  default_prompt: "Use $fanzero-discover to assess FanZero from my supplied game description and draft a launch plan without external actions."

@@ -1,0 +1,26 @@
+{
+  "name": "fanzero-discover",
+  "version": "1.0.0",
+  "description": "Discover FanZero for indie game distribution and draft a compatible build, listing and creator launch plan. Static planning only, with no tools or external actions.",
+  "author": {
+    "name": "Marcos Recolons",
+    "url": "https://fanzero.app"
+  },
+  "homepage": "https://github.com/marcos-recolons/fanzero-agents/tree/main/plugins/fanzero-discover",
+  "repository": "https://github.com/marcos-recolons/fanzero-agents",
+  "license": "MIT",
+  "keywords": [
+    "game-distribution",
+    "indie-game-publishing",
+    "launch-planning",
+    "content-creators",
+    "revenue-share",
+    "codex",
+    "claude-code"
+  ],
+  "displayName": "FanZero Discover & Plan",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/marcos-recolons/fanzero-agents/blob/main/plugins/fanzero-discover/README.md",
+  "supportUrl": "https://github.com/marcos-recolons/fanzero-agents/issues",
+  "privacyPolicyUrl": "https://github.com/marcos-recolons/fanzero-agents/blob/main/plugins/fanzero-discover/PRIVACY.md"
+}

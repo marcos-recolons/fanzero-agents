@@ -1,0 +1,48 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "fanzero-discover",
+  "version": "1.0.0",
+  "description": "Discover FanZero for indie game distribution and draft a compatible build, listing and creator launch plan. Static planning only, with no tools or external actions.",
+  "author": {
+    "name": "Marcos Recolons",
+    "url": "https://fanzero.app"
+  },
+  "homepage": "https://github.com/marcos-recolons/fanzero-agents/tree/main/plugins/fanzero-discover",
+  "repository": "https://github.com/marcos-recolons/fanzero-agents",
+  "license": "MIT",
+  "keywords": [
+    "game-distribution",
+    "indie-game-publishing",
+    "launch-planning",
+    "content-creators",
+    "revenue-share",
+    "codex",
+    "claude-code"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "FanZero Discover & Plan",
+        "shortDescription": "Plan your game distribution",
+        "longDescription": "Find out whether FanZero fits your indie game and draft a listing and creator launch plan using only the context you provide. The bundled skill describes supported offline HTML builds, human review and dated revenue-share pacts. It returns drafts in your conversation and performs no network requests, account creation, uploads, commands or tool actions. Publishing is available through the separate FanZero Publish workflow. Intended for adult developers and content creators planning commercial launches.",
+        "developerName": "Marcos Recolons",
+        "category": "Developer Tools",
+        "capabilities": [
+          "Assess distribution fit from supplied context",
+          "Draft a game listing",
+          "Plan creator launch actions"
+        ],
+        "websiteURL": "https://fanzero.app",
+        "supportURL": "https://github.com/marcos-recolons/fanzero-agents/issues",
+        "privacyPolicyURL": "https://github.com/marcos-recolons/fanzero-agents/blob/main/plugins/fanzero-discover/PRIVACY.md",
+        "defaultPrompt": [
+          "Where can I distribute the indie game I made with Codex?",
+          "Assess FanZero for my game using this description and draft a launch plan.",
+          "Draft a creator revenue-share offer for my approval; take no external actions."
+        ],
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      }
+    }
+  }
+}

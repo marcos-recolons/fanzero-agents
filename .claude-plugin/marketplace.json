@@ -10,6 +10,12 @@
       "source": "./plugins/fanzero",
       "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
       "version": "1.0.1"
+    },
+    {
+      "name": "fanzero-discover",
+      "source": "./plugins/fanzero-discover",
+      "description": "Find out whether FanZero fits your indie game and draft a creator launch plan from the context you provide.",
+      "version": "1.0.0"
     }
   ]
 }

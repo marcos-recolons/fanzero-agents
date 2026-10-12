@@ -1,8 +1,15 @@
-# FanZero Publish for Codex and Claude Code
+# FanZero for Codex and Claude Code
 
 Publish an indie game on [FanZero](https://fanzero.app), find an audience for its launch, and work with content creators through revenue-share pacts.
 
 This repository contains a publishing **skill**, marketplace catalogs and optional manual connection recipes. The plugin does not automatically connect to a server, execute code, create accounts, upload games or grant an agent permission to offer revenue. It includes no application source or studio credentials.
+
+There are two packages:
+
+- **FanZero Discover & Plan** (`fanzero-discover`) assesses whether FanZero fits a game and drafts a creator launch plan from the context you provide. All its instructions are included in the package. It makes no network requests, runs no code and sends no data to FanZero. See its [README](plugins/fanzero-discover/README.md) and [privacy policy](plugins/fanzero-discover/PRIVACY.md).
+- **FanZero Publish** (`fanzero`) guides build validation and publication through a manual connection to the hosted FanZero service. Its optional transmissions and storage are described in the [plugin README](plugins/fanzero/README.md#data-when-using-fanzero).
+
+The installation commands below install FanZero Publish. To choose Discover & Plan, use `fanzero-discover@fanzero-agents` instead of `fanzero@fanzero-agents`; its Claude Code skill is `/fanzero-discover:fanzero-discover`. Official directory publication is a separate review.
 
 Current uploads accept an offline HTML build or playable slice, with bundled assets and an `index.html` entry, up to 8 MB. Native games need a compatible export or slice; a store link can accompany it. A human curator reviews each new game.
 
