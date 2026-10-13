@@ -1,6 +1,6 @@
 # Privacy notice: FanZero Discover & Plan
 
-Publisher: **Marcos Recolons**. This notice covers the `fanzero-discover` static planning plugin, version 1.1.0. Support is available through [the integration repository's issues](https://github.com/marcos-recolons/fanzero-agents/issues).
+Publisher: **Marcos Recolons**. This notice covers the `fanzero-discover` static planning plugin, version 1.2.0. Support is available through [the integration repository's issues](https://github.com/marcos-recolons/fanzero-agents/issues).
 
 ## What this package does
 
