@@ -7,11 +7,11 @@ This repository contains a publishing **skill**, marketplace catalogs and option
 There are two packages:
 
 - **FanZero Discover & Plan** (`fanzero-discover`) assesses whether FanZero fits a game and drafts a creator launch plan from the context you provide. All its instructions are included in the package. It makes no network requests, runs no code and sends no data to FanZero. See its [README](plugins/fanzero-discover/README.md) and [privacy policy](plugins/fanzero-discover/PRIVACY.md).
-- **FanZero Publish** (`fanzero`) guides build validation and publication through a manual connection to the hosted FanZero service. Its optional transmissions and storage are described in the [plugin README](plugins/fanzero/README.md#data-when-using-fanzero).
+- **FanZero Publish** (`fanzero`) guides complete listing preparation and one-operation publication through a manual connection to the hosted FanZero service. Its optional transmissions and storage are described in the [plugin README](plugins/fanzero/README.md#data-when-using-fanzero).
 
 The installation commands below install FanZero Publish. To choose Discover & Plan, use `fanzero-discover@fanzero-agents` instead of `fanzero@fanzero-agents`; its Claude Code skill is `/fanzero-discover:fanzero-discover`. Official directory publication is a separate review.
 
-Current uploads accept an offline HTML build or playable slice, with bundled assets and an `index.html` entry, up to 8 MB. Native games need a compatible export or slice; a store link can accompany it. A human curator reviews each new game.
+Publish a listing with images or videos, a description, platform links, each platform's prices and currencies or a clear monetization model. Native and online games stay on their existing platforms. A playable version on FanZero is optional; only that upload needs offline HTML, bundled assets, an `index.html` entry and at most 8 MB. A listing needs no game port, playable slice or repository change. A human curator reviews each new game.
 
 ## Install in Codex
 
@@ -24,7 +24,7 @@ codex plugin add fanzero@fanzero-agents
 
 Restart the client or begin a new session, then ask:
 
-> Use FanZero Publish to check this game and prepare a listing and revenue-share offer for my approval.
+> Use FanZero Publish to prepare a complete game listing and revenue-share offer for my approval.
 
 In the desktop app, add the marketplace, restart the app and select **FanZero Publish** from **FanZero Agents** in the Plugins Directory. This repository marketplace is separate from the official public directory; listing there requires review.
 
@@ -54,7 +54,7 @@ Or ask Claude to assess your game for FanZero. The Claude-compatible manifest is
 
 ## Optional manual MCP connection
 
-Install the skill without MCP for planning and build guidance. When you want the publishing tools, add an anonymous connection yourself:
+Install the skill without MCP for planning and listing guidance. When you want the publishing tools, add an anonymous connection yourself:
 
 ```bash
 # Codex
@@ -66,7 +66,7 @@ claude mcp add --transport http fanzero https://fanzero.app/mcp
 
 `connections/codex.toml` and `connections/claude-code.json` show equivalent settings. They are outside the plugin and are not loaded during installation. Merge settings only when you decide to connect; avoid replacing an existing configuration file.
 
-Five tools work without a key: `read_listing_guidelines`, `check_build`, `whoami`, `create_studio` and `browse_games`. The first, second, third and fifth are read-only; **`create_studio` creates an account and must be authorized**. Studio tools require your studio's `api_key` in each call. Keys passed this way can appear in the agent's private tool history; keep that conversation private and never commit a key. There is no OAuth flow today. See the [current agent guide](https://fanzero.app/agents.md) for tool schemas and authentication details.
+Read-only tools such as `read_listing_guidelines`, `check_build`, `whoami` and `browse_games` work without a key. **`create_studio` creates an account and must be authorized**. For a complete publication, `publish_game` accepts an existing studio key or approved `studio: { name, contact }` and creates the studio and listing together. It requires `human_approved: true` reflecting real approval and a stable `idempotency_key`; reuse the same key and identical payload when retrying. Keep any returned API key privately, because anonymous replays return a receipt without recovered credentials. Existing-studio calls require the key. Keys passed this way can appear in the agent's private tool history; keep that conversation private and never commit a key. There is no OAuth flow today. See the [current agent guide](https://fanzero.app/agents.md) for tool schemas and authentication details.
 
 Publishing creates a listing and offers the revenue shares you approve. The studio approves a creator's dated plan once; the share runs 28 days from its earliest scheduled action. No proof stage is needed for new pacts. FanZero records the agreement; payouts happen directly between the studio and creator.
 
