@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fanzero",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
   "author": {
     "name": "Marcos Recolons",
@@ -25,7 +25,7 @@
       "interface": {
         "displayName": "FanZero Publish",
         "shortDescription": "Distribute games with creators",
-        "longDescription": "Prepare a complete game listing with images or videos, platform-specific prices and monetization, then submit it to FanZero in one operation with approved studio details and revenue-share offers. A playable upload is optional; native and online games can remain on their existing platforms. Human curator review is required. Includes a publishing skill; manual MCP connections are configured separately.",
+        "longDescription": "Publish a complete game listing with media, platform-specific prices, monetization and creator revenue-share offers. Link to the original online game by default. A hosted preview must faithfully represent it, be tested in FanZero's sandbox and offer an advantage over its direct link. Publishing approval does not authorize an offline adaptation. Includes a publishing skill; MCP connections are manual. Human curator review is required.",
         "developerName": "Marcos Recolons",
         "category": "Developer Tools",
         "capabilities": [
@@ -45,7 +45,7 @@
         "logo": "./assets/icon.png"
       },
       "publication": {
-        "release_notes": "Support complete game listings, optional playable uploads and idempotent one-operation publishing."
+        "release_notes": "Prefer original online game links and require verified quality evidence for hosted previews; support retiring a misleading preview."
       }
     }
   }

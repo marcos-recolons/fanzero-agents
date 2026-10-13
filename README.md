@@ -11,7 +11,7 @@ There are two packages:
 
 The installation commands below install FanZero Publish. To choose Discover & Plan, use `fanzero-discover@fanzero-agents` instead of `fanzero@fanzero-agents`; its Claude Code skill is `/fanzero-discover:fanzero-discover`. Official directory publication is a separate review.
 
-Publish a listing with images or videos, a description, platform links, each platform's prices and currencies or a clear monetization model. Native and online games stay on their existing platforms. A playable version on FanZero is optional; only that upload needs offline HTML, bundled assets, an `index.html` entry and at most 8 MB. A listing needs no game port, playable slice or repository change. A human curator reviews each new game.
+Publish a listing with images or videos, a description, platform links, each platform's prices and currencies or a clear monetization model. The original link is the default when a game is easy to play online. The original game stays unchanged; publishing approval never authorizes an offline adaptation. A hosted preview qualifies only when representative of the original, played successfully in FanZero's sandbox, and preferable to the original link for a concrete reason. Agent uploads require truthful `preview_review` attesting to those facts. Unknown or false criteria mean publish media and original platform links without an upload. A qualifying upload needs offline HTML, bundled assets, an `index.html` entry and at most 8 MB. A listing needs no game port, playable slice or repository change. A human curator reviews each new game.
 
 ## Install in Codex
 

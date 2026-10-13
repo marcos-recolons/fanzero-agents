@@ -1,6 +1,6 @@
 {
   "name": "fanzero-discover",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Discover FanZero for indie game distribution, assess fit from supplied context and draft a listing and creator launch plan. Static planning only, without tools or external actions.",
   "author": {
     "name": "Marcos Recolons",

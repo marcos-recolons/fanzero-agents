@@ -6,7 +6,7 @@ license: MIT
 
 # Discover FanZero and plan a game launch
 
-Help an adult developer or content creator decide whether FanZero fits their game-distribution goal and prepare a plan for the owner to review. Work entirely from the conversation and the static information bundled below. Return drafts in the conversation; do not take external actions.
+Help an adult developer or content creator decide whether FanZero fits their game-distribution goal and prepare a plan for the owner to review. Work entirely from the conversation and the static information bundled below. Return public listing drafts in English and discuss decisions in the owner's language; do not take external actions.
 
 ## Scope
 
@@ -20,11 +20,13 @@ This skill ends with planning. A request to publish does not enable external act
 
 FanZero connects studios with content creators through launch visibility and revenue-share pacts. Creators choose games that suit them and their audiences; the studio approves a proposed action plan. A human curator reviews every new game before it is listed. Approval, audience reach and revenue are not guaranteed.
 
-A listing presents a game through its description, public images or videos, and named platforms with HTTPS links. Platforms can have different prices and currencies, or models such as free access, ads, in-app purchases or subscriptions. A listing without an uploaded build needs at least one visual, one platform and clear commercial information. Native and online games can remain on their existing platforms.
+A listing presents a game through its description, public images or videos, and named platforms with HTTPS links. Platforms can have different prices and currencies, or models such as free access, ads, in-app purchases or subscriptions. A listing without an uploaded build needs at least one visual, one platform and clear commercial information. When the original game is easy to play online, its direct platform link is the default. The original game remains unchanged. A publishing request does not authorize adapting it.
 
-A playable version hosted on FanZero is optional. Only that upload must be offline HTML with bundled assets, an `index.html` entry and at most 8 MB, without network calls, external assets or navigation. Native executables are not upload formats. Do not suggest stripping online features, porting a game or creating a slice merely to list it.
+A hosted preview is an exception: it must represent the original game faithfully, have been played successfully in FanZero's sandbox, and be preferable to the direct original link for a concrete reason. A static check alone is insufficient. The separate publishing workflow records those verified facts in `preview_review` (`representative`, `sandbox_tested`, `preferable_to_direct_link` all true, plus a reason of 20–600 characters). This static skill cannot test or attest to them. If any fact is false or unknown, plan a listing with images/videos and original platform links, omitting `html`, `files` and `preview_review`.
 
-Assess fit from the supplied game, audience, media and platform information. Mark prices, availability, rights and gameplay as unverified where the user has not established them. Assess upload compatibility only if the owner wants a playable preview; do not generate code, inspect files or begin conversion.
+Only a qualifying upload must be offline HTML with bundled assets, an `index.html` entry and at most 8 MB, without network calls, external assets or navigation. Native executables are not upload formats. Never propose removing online features, multiplayer, accounts, shops, rankings or purchases, or inventing an offline slice merely to fit that format. An owner-requested adaptation would be separate work. An existing misleading preview can be retired through the separate Publish workflow using `remove_preview: true` with complete media, platforms and monetization; do not perform that action here.
+
+Assess fit from the supplied game, audience, media and platform information. Mark prices, availability, rights and gameplay as unverified where the user has not established them. Prefer the original online link. Assess a preview only from supplied evidence for all three quality conditions; do not generate code, inspect files or begin conversion.
 
 The studio offers a suggested action and a share of the game's net revenue, expressed in percent: above 0% and at most 50%. This share applies to net revenue from every store during the exclusive date window, regardless of individual buyer referrals. It is attributed by dates, not purchase tracking. Offer terms remain a draft until the owner approves them.
 

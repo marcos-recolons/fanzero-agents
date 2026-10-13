@@ -8,14 +8,14 @@
     {
       "name": "fanzero",
       "source": "./plugins/fanzero",
-      "description": "Publish a complete game listing with media, platform prices and creator offers; a playable upload is optional.",
-      "version": "1.1.0"
+      "description": "Publish a complete game listing linking to its original online experience; host a preview only when verified and more useful.",
+      "version": "1.2.0"
     },
     {
       "name": "fanzero-discover",
       "source": "./plugins/fanzero-discover",
-      "description": "Assess FanZero and draft a complete game listing and creator launch plan from supplied context; static planning only.",
-      "version": "1.1.0"
+      "description": "Plan a complete listing and creator launch from supplied context, preferring the original game link; no external actions.",
+      "version": "1.2.0"
     }
   ]
 }

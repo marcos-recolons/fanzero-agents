@@ -1,11 +1,11 @@
 ---
 name: fanzero-publish
-description: Publish a complete indie game listing on FanZero with images or videos, platform prices, monetization and creator revenue-share offers. Use for game distribution, listing updates or creator pact requests. A playable upload is optional.
+description: Publish a complete indie game listing on FanZero with images or videos, platform prices, monetization and creator revenue-share offers. Use for game distribution, listing updates or creator pact requests. Prefer the original online game link; host a preview only when verified and more useful.
 ---
 
 # Publish a game with FanZero
 
-FanZero connects game studios with content creators and their audiences through revenue-share pacts. Prepare an accurate listing and carry an authorized submission through review. A human curator approves every new listing; approval, reach and revenue are not guaranteed.
+FanZero connects game studios with content creators and their audiences through revenue-share pacts. Prepare an accurate listing and carry an authorized submission through review. Write public listing copy in English; discuss decisions in the owner's language. A human curator approves every new listing; approval, reach and revenue are not guaranteed.
 
 ## Prepare a complete listing
 
@@ -21,11 +21,23 @@ Use the game's existing description, store pages and assets that the owner suppl
 
 Prepare the payload first. Collect only genuinely missing facts, rights, studio details and commercial choices in one concise question. Reuse explicit approval of publication and these exact terms; do not ask for that permission again. Ask only when a commitment is missing or changes.
 
-## Optional playable version
+## Original online link first
 
-List native or online games on their existing platforms without uploading them. Include `html` or `files` only when the owner wants a playable version hosted on FanZero and it is compatible: offline HTML with an `index.html` entry, bundled assets, at most 8 MB, no network calls, outside assets or navigation. It runs in an opaque-origin sandbox; storage needs guards.
+When the game is easy to play online, use its original platform link by default. Images, videos, commercial information and that link make a complete listing; the game itself stays unchanged. Publishing authorization does not authorize adapting the game.
 
-These restrictions apply to the optional upload, not the original game. Do not strip multiplayer, accounts, rankings or purchases, create a slice, port an engine or change its build pipeline just to publish the listing. An owner-requested playable adaptation is a separate scope decision. Native executables are not an upload format.
+Never remove online functionality, multiplayer, accounts, shops, rankings or purchases, or invent an offline slice merely to fit FanZero's upload format. A slice that loses the game's experience must not be presented as the original. Do not port an engine or change its build pipeline for a listing. If the owner separately requests an adaptation, treat it as separate work rather than a publishing prerequisite.
+
+A hosted preview is an exception. Before sending `html` or `files`, verify all three facts:
+
+- It represents the original experience faithfully, including the features needed to understand the game.
+- You played this exact version successfully in FanZero's `iframe sandbox="allow-scripts"`. Static validation is not a gameplay test.
+- It is preferable to the direct original link for a concrete reason you can explain.
+
+Include truthful `preview_review: { representative: true, sandbox_tested: true, preferable_to_direct_link: true, reason }`, with a reason of 20–600 characters. These are evidence-backed attestations, not flags to turn on to unblock a submission. If any criterion is false or unknown, omit `html`, `files` and `preview_review` and submit images/videos and the original platform link instead. Do not ask to convert a working online game just to create a preview.
+
+A qualifying upload still needs offline HTML, an `index.html` entry, bundled assets, at most 8 MB, no network calls, external assets or navigation, and guarded opaque-origin storage. Those restrictions apply only to the preview, not the original game. Native executables are not upload formats. Reassess and test each replacement preview.
+
+For an existing misleading preview, use `update_game` with `remove_preview: true` and complete media, platforms and monetization on the same listing. Do not include `html`, `files` or `preview_review` in that removal call. It retires the public preview while preserving the original link, game id, agreements and history; do not create a duplicate game or rebuild the original.
 
 ## Reach the tools
 

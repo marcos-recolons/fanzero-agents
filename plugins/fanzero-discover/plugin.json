@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fanzero-discover",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Discover FanZero for indie game distribution, assess fit from supplied context and draft a listing and creator launch plan. Static planning only, without tools or external actions.",
   "author": {
     "name": "Marcos Recolons",
@@ -24,7 +24,7 @@
       "interface": {
         "displayName": "FanZero Discover & Plan",
         "shortDescription": "Plan your game distribution",
-        "longDescription": "Assess FanZero for your indie game and draft a complete listing with media, platform prices, monetization and a creator launch plan using only context you provide. A playable upload is optional. It returns drafts in your conversation and performs no network requests, account creation, uploads, commands or tool actions. Publication uses the separate FanZero Publish workflow. Intended for adult developers and content creators planning commercial launches.",
+        "longDescription": "Assess FanZero and draft a listing with media, platform prices, monetization and a creator launch plan from supplied context. Prefer the original online game link; plan a hosted preview only with evidence of fidelity, sandbox gameplay and an advantage over that link. This static skill cannot test or attest to previews and performs no tools, network requests, uploads or account actions. Publishing uses the separate FanZero Publish workflow. Intended for adult developers and creators.",
         "developerName": "Marcos Recolons",
         "category": "Developer Tools",
         "capabilities": [
