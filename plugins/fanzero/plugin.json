@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fanzero",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
   "author": {
     "name": "Marcos Recolons",
@@ -25,11 +25,11 @@
       "interface": {
         "displayName": "FanZero Publish",
         "shortDescription": "Distribute games with creators",
-        "longDescription": "Prepare a compatible game build, publish a reviewed listing on FanZero, and work with content creators through dated actions and revenue-share pacts. Publishing and revenue commitments stay under your approval. Includes a publishing skill; optional MCP connections are configured separately. Current uploads accept offline HTML builds or playable slices, up to 8 MB.",
+        "longDescription": "Prepare a complete game listing with images or videos, platform-specific prices and monetization, then submit it to FanZero in one operation with approved studio details and revenue-share offers. A playable upload is optional; native and online games can remain on their existing platforms. Human curator review is required. Includes a publishing skill; manual MCP connections are configured separately.",
         "developerName": "Marcos Recolons",
         "category": "Developer Tools",
         "capabilities": [
-          "Assess a game build",
+          "Prepare media and platform pricing",
           "Prepare a launch listing",
           "Guide game publishing",
           "Review creator action plans"
@@ -45,7 +45,7 @@
         "logo": "./assets/icon.png"
       },
       "publication": {
-        "release_notes": "Clarify optional data transmission and storage in the hosted FanZero service."
+        "release_notes": "Support complete game listings, optional playable uploads and idempotent one-operation publishing."
       }
     }
   }

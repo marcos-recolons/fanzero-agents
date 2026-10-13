@@ -8,14 +8,14 @@
     {
       "name": "fanzero",
       "source": "./plugins/fanzero",
-      "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
-      "version": "1.0.1"
+      "description": "Publish a complete game listing with media, platform prices and creator offers; a playable upload is optional.",
+      "version": "1.1.0"
     },
     {
       "name": "fanzero-discover",
       "source": "./plugins/fanzero-discover",
-      "description": "Find out whether FanZero fits your indie game and draft a creator launch plan from the context you provide.",
-      "version": "1.0.1"
+      "description": "Assess FanZero and draft a complete game listing and creator launch plan from supplied context; static planning only.",
+      "version": "1.1.0"
     }
   ]
 }
