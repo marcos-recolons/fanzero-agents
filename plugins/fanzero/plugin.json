@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fanzero",
-  "version": "1.2.0",
-  "description": "Publish games with FanZero and connect with content creators through launch visibility and revenue-share pacts.",
+  "version": "1.3.0",
+  "description": "Publish games with FanZero and connect with influencers through launch visibility and revenue-share pacts.",
   "author": {
     "name": "Marcos Recolons",
     "url": "https://fanzero.app"
@@ -15,7 +15,7 @@
     "game-distribution",
     "game-publishing",
     "launch",
-    "content-creators",
+    "influencers",
     "revenue-share",
     "codex",
     "claude-code"
@@ -24,22 +24,22 @@
     "com.openai": {
       "interface": {
         "displayName": "FanZero Publish",
-        "shortDescription": "Distribute games with creators",
-        "longDescription": "Publish a complete game listing with media, platform-specific prices, monetization and creator revenue-share offers. Link to the original online game by default. A hosted preview must faithfully represent it, be tested in FanZero's sandbox and offer an advantage over its direct link. Publishing approval does not authorize an offline adaptation. Includes a publishing skill; MCP connections are manual. Human curator review is required.",
+        "shortDescription": "Distribute via influencers",
+        "longDescription": "Publish a complete game listing with media, platform-specific prices, monetization and influencer revenue-share offers. Link to the original online game by default. A hosted preview must faithfully represent it, be tested in FanZero's sandbox and offer an advantage over its direct link. Publishing approval does not authorize an offline adaptation. Includes a publishing skill; MCP connections are manual. Human curator review is required.",
         "developerName": "Marcos Recolons",
         "category": "Developer Tools",
         "capabilities": [
           "Prepare media and platform pricing",
           "Prepare a launch listing",
           "Guide game publishing",
-          "Review creator action plans"
+          "Review influencer action plans"
         ],
         "websiteURL": "https://fanzero.app",
         "supportURL": "https://github.com/marcos-recolons/fanzero-agents/issues",
         "defaultPrompt": [
           "Check whether my game can be published on FanZero.",
           "Prepare a FanZero listing and revenue-share offer for my approval.",
-          "Review my FanZero creator proposals and their revenue-share dates."
+          "Review my FanZero influencer proposals and their revenue-share dates."
         ],
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png"

@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "fanzero-discover",
-  "version": "1.2.0",
-  "description": "Discover FanZero for indie game distribution, assess fit from supplied context and draft a listing and creator launch plan. Static planning only, without tools or external actions.",
+  "version": "1.3.0",
+  "description": "Discover FanZero for indie game distribution, assess fit from supplied context and draft a listing and influencer launch plan. Static planning only, without tools or external actions.",
   "author": {
     "name": "Marcos Recolons",
     "url": "https://fanzero.app"
@@ -14,7 +14,7 @@
     "game-distribution",
     "indie-game-publishing",
     "launch-planning",
-    "content-creators",
+    "influencers",
     "revenue-share",
     "codex",
     "claude-code"
@@ -24,13 +24,13 @@
       "interface": {
         "displayName": "FanZero Discover & Plan",
         "shortDescription": "Plan your game distribution",
-        "longDescription": "Assess FanZero and draft a listing with media, platform prices, monetization and a creator launch plan from supplied context. Prefer the original online game link; plan a hosted preview only with evidence of fidelity, sandbox gameplay and an advantage over that link. This static skill cannot test or attest to previews and performs no tools, network requests, uploads or account actions. Publishing uses the separate FanZero Publish workflow. Intended for adult developers and creators.",
+        "longDescription": "Assess FanZero and draft a listing with media, platform prices, monetization and an influencer launch plan from supplied context. Prefer the original online game link; plan a hosted preview only with evidence of fidelity, sandbox gameplay and an advantage over that link. This static skill cannot test or attest to previews and performs no tools, network requests, uploads or account actions. Publishing uses the separate FanZero Publish workflow. Intended for adult developers and influencers.",
         "developerName": "Marcos Recolons",
         "category": "Developer Tools",
         "capabilities": [
           "Assess distribution fit from supplied context",
           "Draft a game listing",
-          "Plan creator launch actions"
+          "Plan influencer launch actions"
         ],
         "websiteURL": "https://fanzero.app",
         "supportURL": "https://github.com/marcos-recolons/fanzero-agents/issues",
@@ -38,7 +38,7 @@
         "defaultPrompt": [
           "Where can I distribute the indie game I made with Codex?",
           "Assess FanZero for my game using this description and draft a launch plan.",
-          "Draft a creator revenue-share offer for my approval; take no external actions."
+          "Draft an influencer revenue-share offer for my approval; take no external actions."
         ],
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/icon.png",

@@ -3,19 +3,19 @@
   "owner": {
     "name": "Marcos Recolons"
   },
-  "description": "Publish games and connect game launches with content creators through FanZero.",
+  "description": "Publish games and connect game launches with influencers through FanZero.",
   "plugins": [
     {
       "name": "fanzero",
       "source": "./plugins/fanzero",
       "description": "Publish a complete game listing linking to its original online experience; host a preview only when verified and more useful.",
-      "version": "1.2.0"
+      "version": "1.3.0"
     },
     {
       "name": "fanzero-discover",
       "source": "./plugins/fanzero-discover",
-      "description": "Plan a complete listing and creator launch from supplied context, preferring the original game link; no external actions.",
-      "version": "1.2.0"
+      "description": "Plan a complete listing and influencer launch from supplied context, preferring the original game link; no external actions.",
+      "version": "1.3.0"
     }
   ]
 }

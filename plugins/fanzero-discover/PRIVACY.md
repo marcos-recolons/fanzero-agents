@@ -21,4 +21,4 @@ If you voluntarily open a GitHub support issue, GitHub handles that information 
 
 ## Intended audience
 
-This planning plugin is intended for adult developers and content creators considering commercial launches. It does not offer a service for minors or collect age-verification information.
+This planning plugin is intended for adult developers and influencers considering commercial launches. It does not offer a service for minors or collect age-verification information.
