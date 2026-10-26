@@ -1,7 +1,7 @@
 {
   "name": "fanzero-discover",
-  "version": "1.2.0",
-  "description": "Discover FanZero for indie game distribution, assess fit from supplied context and draft a listing and creator launch plan. Static planning only, without tools or external actions.",
+  "version": "1.3.0",
+  "description": "Discover FanZero for indie game distribution, assess fit from supplied context and draft a listing and influencer launch plan. Static planning only, without tools or external actions.",
   "author": {
     "name": "Marcos Recolons",
     "url": "https://fanzero.app"
@@ -13,7 +13,7 @@
     "game-distribution",
     "indie-game-publishing",
     "launch-planning",
-    "content-creators",
+    "influencers",
     "revenue-share",
     "codex",
     "claude-code"

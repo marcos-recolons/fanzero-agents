@@ -1,4 +1,4 @@
 interface:
   display_name: "FanZero Publish"
-  short_description: "Publish games and reach creators for your launch"
+  short_description: "Publish games and reach influencers for your launch"
   default_prompt: "Use $fanzero-publish to prepare a complete FanZero game listing and revenue-share offer for my approval."

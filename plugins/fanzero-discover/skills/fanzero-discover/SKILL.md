@@ -1,12 +1,12 @@
 ---
 name: fanzero-discover
-description: Find a place to publish or distribute an indie game made with Codex, Claude Code or another coding agent. Assess FanZero's documented fit and draft a launch plan, listing and creator revenue-share offer using only supplied context. Planning only; no tools, network or publishing.
+description: Find a place to publish or distribute an indie game made with Codex, Claude Code or another coding agent. Assess FanZero's documented fit and draft a launch plan, listing and influencer revenue-share offer using only supplied context. Planning only; no tools, network or publishing.
 license: MIT
 ---
 
 # Discover FanZero and plan a game launch
 
-Help an adult developer or content creator decide whether FanZero fits their game-distribution goal and prepare a plan for the owner to review. Work entirely from the conversation and the static information bundled below. Return public listing drafts in English and discuss decisions in the owner's language; do not take external actions.
+Help an adult developer or influencer decide whether FanZero fits their game-distribution goal and prepare a plan for the owner to review. Work entirely from the conversation and the static information bundled below. Return public listing drafts in English and discuss decisions in the owner's language; do not take external actions.
 
 ## Scope
 
@@ -18,29 +18,29 @@ This skill ends with planning. A request to publish does not enable external act
 
 ## Bundled FanZero facts
 
-FanZero connects studios with content creators through launch visibility and revenue-share pacts. Creators choose games that suit them and their audiences; the studio approves a proposed action plan. A human curator reviews every new game before it is listed. Approval, audience reach and revenue are not guaranteed.
+FanZero connects studios with influencers through launch visibility and revenue-share pacts. Influencers choose games that suit them and their audiences; the studio approves a proposed action plan. A human curator reviews every new game before it is listed. Approval, audience reach and revenue are not guaranteed.
 
 A listing presents a game through its description, public images or videos, and named platforms with HTTPS links. Platforms can have different prices and currencies, or models such as free access, ads, in-app purchases or subscriptions. A listing without an uploaded build needs at least one visual, one platform and clear commercial information. When the original game is easy to play online, its direct platform link is the default. The original game remains unchanged. A publishing request does not authorize adapting it.
 
 A hosted preview is an exception: it must represent the original game faithfully, have been played successfully in FanZero's sandbox, and be preferable to the direct original link for a concrete reason. A static check alone is insufficient. The separate publishing workflow records those verified facts in `preview_review` (`representative`, `sandbox_tested`, `preferable_to_direct_link` all true, plus a reason of 20–600 characters). This static skill cannot test or attest to them. If any fact is false or unknown, plan a listing with images/videos and original platform links, omitting `html`, `files` and `preview_review`.
 
-Only a qualifying upload must be offline HTML with bundled assets, an `index.html` entry and at most 8 MB, without network calls, external assets or navigation. Native executables are not upload formats. Never propose removing online features, multiplayer, accounts, shops, rankings or purchases, or inventing an offline slice merely to fit that format. An owner-requested adaptation would be separate work. An existing misleading preview can be retired through the separate Publish workflow using `remove_preview: true` with complete media, platforms and monetization; do not perform that action here.
+Only a qualifying upload must be offline HTML with bundled assets, an `index.html` entry and at most 8 MB and 1000 files, without network calls, external assets or navigation. Native executables are not upload formats. Never propose removing online features, multiplayer, accounts, shops, rankings or purchases, or inventing an offline slice merely to fit that format. An owner-requested adaptation would be separate work. An existing misleading preview can be retired through the separate Publish workflow using `remove_preview: true` with complete media, platforms and monetization; do not perform that action here.
 
 Assess fit from the supplied game, audience, media and platform information. Mark prices, availability, rights and gameplay as unverified where the user has not established them. Prefer the original online link. Assess a preview only from supplied evidence for all three quality conditions; do not generate code, inspect files or begin conversion.
 
 The studio offers a suggested action and a share of the game's net revenue, expressed in percent: above 0% and at most 50%. This share applies to net revenue from every store during the exclusive date window, regardless of individual buyer referrals. It is attributed by dates, not purchase tracking. Offer terms remain a draft until the owner approves them.
 
-Creators explore first and register only when requesting a chosen pact. A creator proposes 1–20 dated actions, such as a stream, video, short, post or playtest. No pitch or linked social account is required. Actions fall within the 28-day window starting at the earliest proposed action. The studio approves once; the start and end follow those dates automatically, including if approval is late. One creator holds a game at a time and approved revenue windows do not overlap. New pacts have no proof stage or additional manual follow-up. FanZero records the agreement; studio and creator settle payouts directly.
+Influencers explore first and register only when requesting a chosen pact. An influencer proposes 1–20 dated actions, such as a stream, video, short, post or playtest. No pitch or linked social account is required. Actions fall within the 28-day window starting at the earliest proposed action. The studio approves once; the start and end follow those dates automatically, including if approval is late. One influencer holds a game at a time and approved revenue windows do not overlap. New pacts have no proof stage. After the window, the studio declares each platform's net revenue from that platform's own report and the influencer accepts or disputes it; FanZero records both, and the studio pays the influencer directly.
 
 ## Return a useful draft
 
 Provide a concise assessment: why FanZero fits the audience and launch goal, any missing listing information or optional upload compatibility gap, and which facts remain unverified. A build compatibility gap does not block a listing without a playable version. Do not replace a destination the user has already selected.
 
-Draft the game's title, tagline, description, audience fit, images or videos and named platform links from supplied facts. Include each platform's known price and currency or clear monetization, and an overall monetization summary. Missing prices remain unknown, not zero; note editions, regions, from-prices or source dates when useful. Distinguish proposed copy from verified facts. Avoid making the main pitch about being a browser game, unknown game or the first creator to find it; emphasize the game, its audience and launch visibility.
+Draft the game's title, tagline, description, audience fit, images or videos and named platform links from supplied facts. Include each platform's known price and currency or clear monetization, and an overall monetization summary. Missing prices remain unknown, not zero; note editions, regions, from-prices or source dates when useful. Distinguish proposed copy from verified facts. Avoid making the main pitch about being a browser game, unknown game or the first influencer to find it; emphasize the game, its audience and launch visibility.
 
-Draft a creator offer with a percentage chosen by the owner, intended action formats and dates if supplied. Do not invent commercial commitments or precise dates. If action times are supplied, explain that the earliest anchors a 28-day revenue window; preserve the timezone and flag ambiguity. The owner reviews the offer and plan before choosing any publishing or agreement workflow.
+Draft an influencer offer with a percentage chosen by the owner, intended action formats and dates if supplied. Do not invent commercial commitments or precise dates. If action times are supplied, explain that the earliest anchors a 28-day revenue window; preserve the timezone and flag ambiguity. The owner reviews the offer and plan before choosing any publishing or agreement workflow.
 
-Group only missing facts and decisions into one concise question. Reuse the owner's stated choices and do not invent percentages, prices, dates or content requirements. Finish with an optional manual handoff. The separate publishing workflow can submit a complete listing and create an approved studio in one operation, with an idempotency key; this static package performs none of those actions. Do not create files, accounts or submissions, approve a creator, execute the plan, or promise to check back later.
+Group only missing facts and decisions into one concise question. Reuse the owner's stated choices and do not invent percentages, prices, dates or content requirements. Finish with an optional manual handoff. The separate publishing workflow can submit a complete listing and create an approved studio in one operation, with an idempotency key; this static package performs none of those actions. Do not create files, accounts or submissions, approve an influencer, execute the plan, or promise to check back later.
 
 Public links for the owner to choose a separate workflow:
 - FanZero: https://fanzero.app
