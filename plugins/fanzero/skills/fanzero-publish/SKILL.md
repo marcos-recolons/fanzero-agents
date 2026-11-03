@@ -17,7 +17,7 @@ Use the game's existing description, store pages and assets that the owner suppl
 - `media: [{ type, url, alt? }]`: up to 12 public HTTPS images or videos. `type` is `image` or `video`. Do not invent assets or rights. Video links can point to trailer pages; embedding is provider-dependent.
 - `platforms: [{ name, url, price?, currency?, monetization?, note? }]`: up to 12 named HTTPS destinations. Each platform can have a different price. A positive numeric `price` needs an uppercase ISO currency such as `EUR`; unknown prices stay omitted, never 0. Explain editions, regions, a from-price or the source date in `note` when useful.
 - `monetization`: a clear summary, including purchase, free access, ads, in-app purchases, subscriptions or another model. Platform enums are `paid`, `free`, `free_to_play`, `subscription`, `other`. Use notes or the summary for ads and in-app purchases. A listing without an uploaded build needs at least one visual, one platform and clear commercial information.
-- `pacts`: the owner's exact action, `share_pct` (above 0 and at most 50), and any optional requirement or audience preference. Never infer 10%, a minimum stream duration, a purchase price or other financial decisions from a guide's example.
+- `pacts`: the owner's exact action, `share_pct` (above 0 and at most 50), `weeks` (2 to 8, 4 if left out), and any optional requirement or audience preference. Never infer 10%, a minimum stream duration, a purchase price or other financial decisions from a guide's example.
 
 Prepare the payload first. Collect only genuinely missing facts, rights, studio details and commercial choices in one concise question. Reuse explicit approval of publication and these exact terms; do not ask for that permission again. Ask only when a commitment is missing or changes.
 
@@ -63,7 +63,7 @@ For `changes_requested`, fix the specific metadata or optional build and use `up
 
 Influencers explore first and register only when requesting a chosen pact. They propose 1–20 dated actions, with no pitch or social-account link. New claims have `rules_version: 3`, `actions: [{ action, scheduled_at }]` and `window: { from, to }`.
 
-Present each request's actions, percentage and exact start/end times to the owner. The earliest action anchors an exclusive 28-day share of the game's net revenue from every store during that window, regardless of which buyer came from which influencer. Late acceptance does not move the dates. One influencer holds a game at a time and approved windows never overlap. No referral or purchase attribution is needed.
+Present each request's actions, percentage and exact start/end times to the owner. The earliest action anchors an exclusive share of the game's net revenue for the pact's weeks from every store during that window, regardless of which buyer came from which influencer. Late acceptance does not move the dates. One influencer holds a game at a time and approved windows never overlap. No referral or purchase attribution is needed.
 
 Accept with `respond_to_claim` and `human_approved: true` only after approval of that particular agreement. The studio approves once; dates start and complete it automatically. New pacts need no proof or delivery confirmation; after the window comes a settlement (below). `confirm_delivery` is for legacy contracts only after approved proof. Declining a real request also needs authorization.
 
